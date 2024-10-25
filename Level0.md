@@ -18,7 +18,7 @@
 ssh -p $PORT $USER@$HOST
 ```
 
-##Solution:
+## Solution:
 
 **Warning:** Just see the solutions if you are stuck. Try harder to solve the challenges; that's the best way to learn.
 

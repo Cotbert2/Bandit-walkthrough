@@ -1,21 +1,48 @@
-# Level 0 -> Level 1
+# Level 1 -> Level 2
 
-**Description:** The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.
+**Description:** The password for the next level is stored in a file called - located in the home directory
+
 
 ## About Commands:
-1. **ssh:** ssh (secuere shell) is a secure protocol used to connect to a remote computer. It is widely used by network administrators to control Web and other kinds of servers remotely. It is also used to transfer files from one computer to another computer over the network using a secure copy (SCP) Protocol. 
+1. **cat:** Cat command is used to concatenate and display the content of files. It can also be used to concatenate and display files. The cat command is mostly used for viewing the content of a file but it can also be used to create a new file, concatenate files, and redirect output in terminal. 
+In simple words, the cat command is used to display the content of a file.
+
+2. **ls:** The ls command is used to list the files and directories in the current directory. By default, the ls command lists the names of all files and directories in the current directory. The ls command is one of the basic commands that any Linux user should know.
+
+**Notes**:
+- In Linux files are able to do not have a extension, therefore you can call a file without extension.
+
+try:
+
+```bash
+touch file
+```
+*The command touch creates a file called file without extension.*
 
 ## Commands and common flags:
 
-1. **ssh** - OpenSSH SSH client (remote login program)
-    * **-p** - Port to connect to on the remote host
-    * **-l** - Specifies the user to log in as on the remote machine
+1. **cd** - Change Directory
+    * **..** - Go to the parent directory
+    * **/** - Go to the root directory
+    * **~** - Go to the home directory
+    * **-** - Go to the previous directory
+    * "filename" - Go to the directory with the name "filename"
 
 
 **command example:**
 
 ```bash
-ssh -p $PORT $USER@$HOST
+cd /path/to/directory
+```
+
+1. **ls** - List directory contents
+    * **-l** - Use a long listing format
+    * **-a** - Do not ignore entries starting with .
+
+**command example:**
+
+```bash
+ls -la
 ```
 
 ## Solution:
@@ -24,13 +51,23 @@ ssh -p $PORT $USER@$HOST
 
 <details>
 <summary>Solution:</summary>
-1. Open the terminal and type the following command.
+
+(optional) You can use the following command to list all files in the current directory:
 
 ```bash
-ssh -p 2220 bandit0@bandit.labs.overthewire.org
+ls -la
 ```
 
-2. Write "bandit0" on the password field.
+
+1. Once you are in the bandit0 level, write the following command:
+
+```bash
+cat readme
+```
+
+2. The password for the next level will be displayed.
+
+***Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If***
 
 </details>
 

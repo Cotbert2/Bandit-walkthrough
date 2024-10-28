@@ -1,4 +1,4 @@
-# Level 1 -> Level 2
+# Level 2 -> Level 3
 
 **Description:** The password for the next level is stored in a file called spaces in this filename located in the home directory
 
@@ -65,15 +65,17 @@ ls -la
 ```
 
 
-1. Once you are in the bandit1 level, write the following command:
+1. Once you are in the bandit2 level, write the following command:
 
 ```bash
-cat ./-
+cat ./spaces\ in\ this\ filename 
 ```
+
+**Tip:** in the terminal just write cd ./spa and press tab to autocomplete the name of the file; using bash is a very common practice use tab ket to autocomplete teh name of the file.
 
 2. The password for the next level will be displayed.
 
-***Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx***
+***Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx***
 
 </details>
 
